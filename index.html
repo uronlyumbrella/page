@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>인슈룹보험운용</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/logo.png" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+
+    <body id="page-top">
+        <div id="app"></div>
+        <script>
+            // 페이지 데이터 정의
+            const pages = [
+              `<div class="page page1">
+                    <header class="masthead">
+                        <div class="container px-4 px-lg-5 h-100">
+                            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                                <div class="col-lg-8 align-self-end">
+                                    <h1 class="font-weight-bold">인슈룹보험운용</h1>
+                                    <hr class="divider" />
+                                </div>
+                                <div class="col-lg-8 align-self-baseline">
+                                    <p class="text-black-75 mb-5">인슈룹보험운용과 함께 합니다</p>
+                                    <!-- <a class="btn btn-primary btn-xl" href="#contact">바로 문의하기</a> -->
+                                </div>
+                                <div class="col-lg-8 algin-self-end">
+                                    <img class="img-scroll" src="assets/img/scroll.png" style="width: 15%; height: 15%;"/>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </div>`,
+                `<div class="page page2">
+                    <header class="masthead">
+                        <div class="container px-4 px-lg-5 h-100">
+                            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                                <div class="col-lg-8 align-self-end">
+                                    <h1 class="font-weight-bold">인슈룹보험운용</h1>
+                                    <hr class="divider" />
+                                </div>
+                                <div class="col-lg-8 align-self-baseline">
+                                    <p class="text-black-75 mb-5">인슈룹보험운용과 함께 합니다</p>
+                                    <!-- <a class="btn btn-primary btn-xl" href="#contact">바로 문의하기</a> -->
+                                </div>
+                                <div class="col-lg-8 algin-self-end">
+                                    <img class="img-scroll" src="assets/img/scroll.png" style="width: 15%; height: 15%;"/>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </div>`,
+                `<div class="page page3">
+                    <header class="masthead">
+                        <div class="container px-4 px-lg-5 h-100">
+                            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                                <div class="col-lg-8 align-self-end">
+                                    <h1 class="font-weight-bold">인슈룹보험운용</h1>
+                                    <hr class="divider" />
+                                </div>
+                                <div class="col-lg-8 align-self-baseline">
+                                    <p class="text-black-75 mb-5">인슈룹보험운용과 함께 합니다</p>
+                                    <!-- <a class="btn btn-primary btn-xl" href="#contact">바로 문의하기</a> -->
+                                </div>
+                                <div class="col-lg-8 algin-self-end">
+                                    <img class="img-scroll" src="assets/img/scroll.png" style="width: 15%; height: 15%;"/>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </div>`,
+                `<div class="page page4">
+                    <header class="masthead">
+                        <div class="container px-4 px-lg-5 h-100">
+                            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                                <div class="col-lg-8 align-self-end">
+                                    <h1 class="font-weight-bold">인슈룹보험운용</h1>
+                                    <hr class="divider" />
+                                </div>
+                                <div class="col-lg-8 align-self-baseline">
+                                    <p class="text-black-75 mb-5">인슈룹보험운용과 함께 합니다</p>
+                                    <!-- <a class="btn btn-primary btn-xl" href="#contact">바로 문의하기</a> -->
+                                </div>
+                                <div class="col-lg-8 algin-self-end">
+                                    <img class="img-scroll" src="assets/img/scroll.png" style="width: 15%; height: 15%;"/>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </div>`,
+                `<div class="page page5">
+                    <header class="masthead">
+                        <div class="container px-4 px-lg-5 h-100">
+                            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                                <div class="col-lg-8 align-self-end">
+                                    <h1 class="font-weight-bold">인슈룹보험운용</h1>
+                                    <hr class="divider" />
+                                </div>
+                                <div class="col-lg-8 align-self-baseline">
+                                    <p class="text-black-75 mb-5">인슈룹보험운용과 함께 합니다</p>
+                                    <!-- <a class="btn btn-primary btn-xl" href="#contact">바로 문의하기</a> -->
+                                </div>
+                                <div class="col-lg-8 algin-self-end">
+                                    <img class="img-scroll" src="assets/img/scroll.png" style="width: 15%; height: 15%;"/>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </div>`,
+                `<div class="page page6">
+                    <header class="masthead">
+                        <div class="container px-4 px-lg-5 h-100">
+                            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                                <div class="col-lg-8 align-self-end">
+                                    <h1 class="font-weight-bold">인슈룹보험운용</h1>
+                                    <hr class="divider" />
+                                </div>
+                                <div class="col-lg-8 align-self-baseline">
+                                    <p class="text-black-75 mb-5">인슈룹보험운용과 함께 합니다</p>
+                                    <!-- <a class="btn btn-primary btn-xl" href="#contact">바로 문의하기</a> -->
+                                </div>
+                                <div class="col-lg-8 algin-self-end">
+                                    <img class="img-scroll" src="assets/img/scroll.png" style="width: 15%; height: 15%;"/>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </div>`
+            ];
+        
+            // 랜덤 페이지 선택
+            const randomPageIndex = Math.floor(Math.random() * pages.length);
+        
+            // 선택된 페이지 렌더링
+            document.getElementById('app').innerHTML = pages[randomPageIndex];
+          </script>
+
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">
+                    <div class="logo-container">
+                        <img class="img-logo-head" src="assets/logo.png" alt="..." style="width: 20%; height: 20%;">
+                        <div>인슈룹보험운용
+                        <p style="font-size: small; margin: 0;">In-Shuroop IMO</p>
+                        </div>
+                    </div>
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#about">회사소개</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">서비스</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">협력사</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">문의하기</a></li>
+                   <!--     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>  -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--
+        # Masthead
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="font-weight-bold">인슈룹보험운용</h1>
+                        <hr class="divider" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-black-75 mb-5">Life, Non-Life Insurance<br>인슈룹보험운용이 함께 합니다</p>
+                        <a class="btn btn-primary btn-xl" href="#contact">바로 문의하기</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        -->
+
+        <!-- About-->
+        <section class="page-section" id="about">ㄴ
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-center mt-0">회사소개</h2>
+                        <hr class="divider" />
+                        <p class="text-black-75 mb-4"><b>인슈룹보험운용</b>은 국내 손,생보사에서 20년 이상 全 업종을 대상으로 법인영업 부문의 풍부한 영업경험과 관리능력을 갖춘
+                            강점의 전문가들로 구성되었습니다. 
+                            <br><br>
+                            금융, 제조, 건설, 해상물류, 항공 부문의  급격하고 우연한 사고에 대비해 국내 손해보험사와 함께 최상의 보험가입 서비스를 제공합니다.
+                            <br><br>
+                            신뢰와 사명감을 바탕으로,
+                            고객의 재물과 배상책임 全 분야의 위험관리를 약속합니다.</p>
+                       <!-- <a class="btn btn-light btn-xl" href="#services">Get Started!</a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container px-4 px-lg-5 align-items-center justify-content-center">
+                <a href="#portfolio" style="color: black; text-decoration: none;"><h2 class="text-center mt-0">서비스</h2></a>
+                <hr class="divider" />
+
+                <!-- 네비게이션 바 -->
+                <section class="tab-wrap tab-sticky tab-progress tab-sticky-active tab-sticky-sub" style="opacity: 1;">
+                    <div class="tab-inner" style="transform: translateY(0px);">
+                        <!-- 메인 탭 -->
+                        <div class="tab" style="z-index: 1020; position: relative;">
+                            <div class="tab-scroll">
+                                <div class="nav-item dropdown">
+                                    <a href="#suggestion" class="tab-link" data-target="suggestion">보험가입 제안</a>
+                                </div>
+                                <div class="nav-item dropdown">
+                                    <a href="#consulting" class="tab-link" data-target="consulting">보험가입 컨설팅</a>
+                                </div>
+                                <div class="nav-item dropdown">
+                                    <a href="#claim" class="tab-link" data-target="claim">사고 Claim 컨설팅</a>
+                                </div>
+                                <div class="nav-item dropdown">
+                                    <a href="#kinds" class="tab-link" data-target="kinds">보험종목</a>
+                                </div>
+                            </div>
+                            <i class="tab-progress-bar" style="width: 10%;"></i>
+                        </div>
+                        <hr>
+
+                        <!-- 서브 탭 -->
+                        <div id="suggestion" class="tab-sub hidden">
+                            <a href="#suggestion1">물류창고 재산종합 및 창고업자 배상책임</a>
+                            <a href="#suggestion2">건설공사 및 제 3자 배상책임, 도급업자영업배상</a>
+                            <a href="#suggestion3">영업배상(건설기계업자 및 건설중장비)</a>
+                            <a href="#suggestion4">전문인배상 및 시설소유자배상</a>
+
+                            <!--보험가입 제안 내용-->
+                            <div class="suggestion-contents" style=" display: block;">
+                                <div id="suggestion" class="service-title">
+                                    <h3 style="text-align: center; margin: 50px auto 15px auto;">보험가입 제안</h3>
+                                    <!--<p style="text-align: center;">상세설명</p>-->
+                                </div>
+
+                                <div id="suggestion1" class="content">
+                                    <div class="service-item-img">
+                                        <picture class="responsive-picture">
+                                            <source media="(min-width: 750px)" srcset="">
+                                            <source media="(max-width: 750px)" srcset="">
+                                            <img src="./assets/img/service_suggest1.jpg" alt="물류창고 재산종합" style="max-width: 800px;">
+                                        </picture>
+                                    </div>
+                                    <div class="service-item-title" style="margin: 20px auto;">
+                                        <h3>물류창고 재산종합 및 창고업자 배상책임</h3>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <span>가입 대상</span>
+                                        <hr style="margin-top: 2px; margin-bottom: 5px; width: 400px;">
+                                        <p>물류창고, 자가창고 운영 사업자<br>
+                                        금융PF 주선 자산운용 사업자</p>
+                                    </div>
+                                </div>
+
+                                <div id="suggestion2" class="content">
+                                    <div class="service-item-img">
+                                        <picture class="responsive-picture">
+                                            <source media="(min-width: 750px)" srcset="">
+                                            <source media="(max-width: 750px)" srcset="">
+                                            <img src="./assets/img/service_suggest2.jpg" alt="토목건축" style="max-width: 800px;">
+                                        </picture>
+                                    </div>
+                                    <div class="service-item-title" style="margin: 20px auto;">
+                                        <h3>건설공사 및 제 3자 배상책임, 도급업자영업배상</h3>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <span>가입 대상</span>
+                                        <hr style="margin-top: 2px; margin-bottom: 5px; width: 400px;">
+                                        <p>토목건축 건설공사 및 원.하도급 건설 수주 건설현장 건설사업자<br>
+                                        금융PF 주선 사업자<br>
+                                        폭발붕괴, 소음분진, 지하매설물 담보가 필요한 건설작업 현장</p>
+                                    </div>
+                                </div>
+
+                                <div id="suggestion3" class="content">
+                                    <div class="service-item-img">
+                                        <picture class="responsive-picture">
+                                            <source media="(min-width: 750px)" srcset="">
+                                            <source media="(max-width: 750px)" srcset="">
+                                            <img src="./assets/img/service_suggest3.jpg" alt="지게차" style="max-width: 800px;">
+                                        </picture>
+                                    </div>
+                                    <div class="service-item-title" style="margin: 20px auto;">
+                                        <h3>영업배상(건설기계업자 및 건설중장비)</h3>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <span>가입 대상</span>
+                                        <hr style="margin-top: 2px; margin-bottom: 5px; width: 400px;">
+                                        <p>건설장비, 크레인, 지게차, 로우더, 광산용 덤프 운영 사업자</p>
+                                    </div>
+                                </div>
+
+                                <div id="suggestion4" class="content">
+                                    <div class="service-item-img">
+                                        <picture class="responsive-picture">
+                                            <source media="(min-width: 750px)" srcset="">
+                                            <source media="(max-width: 750px)" srcset="">
+                                            <img src="./assets/img/service_suggest4.jpg" alt="요양보호사" style="max-width: 800px;">
+                                        </picture>
+                                    </div>
+                                    <div class="service-item-title" style="margin: 20px auto;">
+                                        <h3>전문인배상 및 시설소유자배상</h3>
+                                    </div>
+                                    <div class="service-item-content">
+                                        <span>가입 대상</span>
+                                        <hr style="margin-top: 2px; margin-bottom: 5px; width: 400px;">
+                                        <p>복지시설, 요양원, 주야간보호, 공동생활가정 요양보호사<br>
+                                        병원 간병인, 기타 전문인 단체</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="consulting" class="tab-sub hidden">
+                            <!-- 보험가입 컨설팅 -->
+                            <div class="consulting-contents" style=" display: block;">
+                                <div id="consulting" class="service-title">
+                                    <h3 style="text-align: center; margin: 50px auto 15px auto;">보험가입 컨설팅</h3>
+                                   <!--<p style="text-align: center;">상세설명</p>-->
+                                </div>
+
+                                <div id="consulting1" class="content">
+                                    <div class="service-item-img">
+                                        <picture class="responsive-picture">
+                                            <source media="(min-width: 750px)" srcset="">
+                                            <source media="(max-width: 750px)" srcset="">
+                                            <img src="./assets/img/consulting.jpg" alt="보험가입 컨설팅" style="max-width: 800px;">
+                                        </picture>
+                                    </div>
+                                    <div class="service-item-title" style="margin: 20px auto;">
+                                        <h3>보험가입 컨설팅</h3>
+                                    </div>
+                                    <div class="service-item-content1" style="display: flex; align-items: baseline;">
+                                        <div>
+                                            <img src="./assets/img/consulting1.png" alt="arrow" style="opacity: 1; margin: 15px 5px 0 0;">
+                                        </div>
+                                        <div class="service-item-content-left" style="margin-right: 20px;">
+                                            <h5>위험 분석</h5>
+                                            <p>위험관리 현장 실사를 통한 위험 존재가능성, 노출, 증감 분석</p>
+                                        </div>
+                                    </div>
+                                    <div class="service-item-content1" style="display: flex; align-items: baseline;">
+                                        <div>
+                                            <img src="./assets/img/consulting2.png" alt="arrow" style="margin: 15px 5px 0 0;">
+                                        </div>
+                                        <div class="service-item-content-left" style="margin-right: 20px;">
+                                            <h5>보험가입 설계</h5>
+                                            <p>위험 보장 가입금액, 보험조건, 특별약관 적용 보험가입 설계</p>
+                                        </div>
+                                    </div>
+                                    <div class="service-item-content1" style="display: flex; align-items: baseline;">
+                                        <div>
+                                            <img src="./assets/img/consulting3.png" alt="arrow" style="margin: 15px 5px 0 0;">
+                                        </div>
+                                        <div class="service-item-content-left" style="margin-right: 20px;">
+                                            <h5>보험료 비교견적 안내</h5>
+                                            <p>일부 보험사 비교견적 제시</p>
+                                        </div>
+                                    </div>
+                                    <div class="service-item-content1" style="display: flex; align-items: baseline;">
+                                       <div>
+                                            <img src="./assets/img/consulting4.png" alt="arrow" style="margin: 15px 5px 0 0;">
+                                        </div>
+                                        <div class="service-item-content-left" style="margin-right: 20px;">
+                                            <h5>보험계약 체결</h5>
+                                            <p>고객의 보험사 및 합리적 보험료 선택을 통한 보험계약 체결, 증권 및 약관 전달</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="claim" class="tab-sub hidden">
+                            <div class="tab-sub-a" style="width:3000px;">
+                                <a href="#claim1">보험사고 Claim Service</a>
+                                <a href="#claim2">위험관리 및 분석</a>
+                            </div>
+
+
+                            <!--사고 claim 컨설팅 내용-->
+                            <div class="claim-contents">
+                                <div id="claim" class="service-title">
+                                    <h3 style="text-align: center; margin: 50px auto 15px auto;">사고 Claim 컨설팅</h3>
+                                    <!--<p style="text-align: center;">상세설명</p>-->
+                                </div>
+
+                                <div id="claim1" class="content">
+                                    <!--
+                                    <div class="service-item-img">
+                                        <picture class="responsive-picture">
+                                            <source media="(min-width: 750px)" srcset="">
+                                            <source media="(max-width: 750px)" srcset="">
+                                            <img src="./assets/img/.jpg" alt="보험사고claimService">
+                                        </picture>
+                                    </div>
+                                    -->
+                                    <div class="service-item-title" style="margin: 20px auto;">
+                                        <h3>보험사고 Claim Service</h3>
+                                    </div>
+                                    <div class="service-item-content" style="display: flex; align-items: baseline;">
+                                        <div class="service-item-content-left" style="margin-right: 20px;">
+                                            <h5>Claim Process Flow</h5>
+                                            <p>고객으로부터 사고내용 접수 → 보험사 접수대행 → 사고현장 전담반 투입 → 사고조사</p>
+                                        </div>
+                                    </div>
+                                    <div class="service-item-content" style="display: flex; align-items: baseline;">
+                                        <div class="service-item-content-left" style="margin-right: 20px;">
+                                            <h5>최종 사고조사 보고서를 토대로 보험금 지급에 대한 객관적 자료로 활용</h5>
+                                        </div>
+                                    </div>
+                                    <div class="service-item-content" style="display: flex; align-items: baseline;">
+                                        <div class="service-item-content-left" style="margin-right: 20px;">
+                                            <h5>보험가입시 위험 증감요인을 고객과 협의 후 반영</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="claim2" class="content">
+                                    <!--
+                                    <div class="service-item-img">
+                                        <picture class="responsive-picture">
+                                            <source media="(min-width: 750px)" srcset="">
+                                            <source media="(max-width: 750px)" srcset="">
+                                            <img src="./assets/img/.jpg" alt="위험관리 및 분석">
+                                        </picture>
+                                    </div>
+                                    -->
+                                    <div class="service-item-title" style="margin: 20px auto;">
+                                        <h3>위험관리 및 분석</h3>
+                                    </div>
+                                    <div class="service-item-content" style="display: flex; align-items: baseline;">
+                                        <div class="service-item-content-left" style="margin-right: 20px;">
+                                            <h5>위험관리 현장 실사를 통한 위험분석 및 측정 → 보험가입시 제시</h5>
+                                        </div>
+                                    </div>
+                                    <div class="service-item-content" style="display: flex; align-items: baseline;">
+                                        <div class="service-item-content-left" style="margin-right: 20px;">
+                                            <h5 style="text-align: center;">위험관리 현장 실사 보험사 전담반 동반 실시</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="kinds" class="tab-sub hidden">
+                            <div class="tab-sub-a" style="width:3000px;">
+                                <a href="#kinds1">재물보험</a>
+                                <a href="#kinds2">해상, 항공보험</a>
+                                <a href="#kinds3">특종보험</a>
+                                <a href="#kinds4">기술보험</a>
+                            </div>
+
+
+                            <!--보험종목 내용-->
+                            <div class="kinds-contents">
+                                <div id="kinds" class="service-title">
+                                    <h3 style="text-align: center; margin: 50px auto 15px auto;">보험종목</h3>
+                                    <!--<p style="text-align: center;">상세설명</p>-->
+                                </div>
+
+                                <div id="kinds1" class="content">
+                                    <div class="service-item-img">
+                                        <picture class="responsive-picture1">
+                                            <source media="(min-width: 750px)" srcset="">
+                                            <source media="(max-width: 750px)" srcset="">
+                                            <img src="./assets/img/kinds1.jpg" alt="재물보험" >
+                                        </picture>
+                                    </div>
+                                    <div class="service-item-title" style="margin: 20px auto;">
+                                        <h3>재물보험</h3>
+                                    </div>
+                                    <div class="service-item-content" style="display: flex; align-items: baseline;">
+                                        <div class="service-item-content-left" style="margin-right: 20px;">
+                                            <h5 style="color:blue; ">화재보험</h5>
+                                            <p>우연한 화재사고로 발생할 수 있는 피보험자의 재산상의 손해 보상<br>(주택화재, 일반화재, 공장화재)</p>
+                                        </div>
+                                    </div>
+                                    <div class="service-item-content" style="display: flex; align-items: baseline;">
+                                        <div class="service-item-content-left" style="margin-right: 20px;">
+                                            <h5 style="color:blue; ">재산종합보험</h5>
+                                            <p>대규모 공장, 소재지별 분산된 사업장의 화재사고, 기계사고, 기업휴지 및 배상책임사고 위험을 통합한 종합 package 보험</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="kinds2" class="content">
+                                    <div class="service-item-img">
+                                        <picture class="responsive-picture1">
+                                            <source media="(min-width: 750px)" srcset="">
+                                            <source media="(max-width: 750px)" srcset="">
+                                            <img src="./assets/img/kinds2.jpg" alt="해상, 항공보험">
+                                        </picture>
+                                    </div>
+                                    <div class="service-item-title" style="margin: 20px auto;">
+                                        <h3>해상, 항공보험</h3>
+                                    </div>
+                                    <div class="service-item-content" style="display: flex; align-items: baseline;">
+                                        <div class="service-item-content-left" style="margin-right: 20px;">
+                                            <h5 style="color:blue; ">운송보험</h5>
+                                            <p>기차나 트럭 등 육상운송 수단(하천, 호수 운송 및 헬기를 이용한 화물 운송 포함)을 이용하여 
+                                                화물 출발지에서 목적지까지 운송 중 사고로 인하여 화물에 발생한 손해 보상
+                                                (상, 하차 전후의 위험, 도로운송위험, 구내운송위험 담보)</p>
+                                        </div>
+                                    </div>
+                                    <div class="service-item-content" style="display: flex; align-items: baseline;">
+                                        <div class="service-item-content-left" style="margin-right: 20px;">
+                                            <h5 style="color:blue; ">적하보험</h5>
+                                            <p>선박이나 항공기 등을 이용한 해상운송에 수반되는 우연한 사고로 인하여 화물에 발생한 손해 보상
+                                                <br>(무역거래 및 신용장 거래 등의 무역금융을 위한 보증수단 활용)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="service-item-content" style="display: flex; align-items: baseline;">
+                                        <div class="service-item-content-left" style="margin-right: 20px;">
+                                            <h5 style="color:blue; ">선박보험</h5>
+                                            <p>해운업자(선주 또는 용선사업자)들의 손해 보상<br>
+                                                선박의 멸실이나 손상으로 인해 피보험자가 입게 되는 손실 보상
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="service-item-content" style="display: flex; align-items: baseline;">
+                                        <div class="service-item-content-left" style="margin-right: 20px;">
+                                            <h5 style="color:blue; ">항공보험</h5>
+                                            <p>항공기 또는 항공운송에 관련되는 여러 위험(비행위험, 활주위험, 지상위험) 보상</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="kinds3" class="content">
+                                    <div class="service-item-img">
+                                        <picture class="responsive-picture1">
+                                            <source media="(min-width: 750px)" srcset="">
+                                            <source media="(max-width: 750px)" srcset="">
+                                            <img src="./assets/img/kinds3.jpg" alt="특종보험">
+                                        </picture>
+                                    </div>
+                                    <div class="service-item-title" style="margin: 20px auto;">
+                                        <h3>특종보험</h3>
+                                    </div>
+                                    <div class="service-item-content" style="display: flex; align-items: baseline;">
+                                        <div class="service-item-content-left" style="margin-right: 20px;">
+                                            <h5 style="color:blue; ">배상책임보험</h5>
+                                            <p>개인의 일상생활 및 기업 등의 영업활동 중 사고로 인하여, 타인의 신체 또는 재산 
+                                                등의 피해를 입혔을 때 법률상의 배상책임 손해 보상</p>
+                                        </div>
+                                    </div>
+                                    <div class="service-item-content" style="display: flex; align-items: baseline; justify-content: center; margin: 20px 0;">
+                                        <div class="service-item-content-center" style="margin-right: 20px;">
+                                            <span><b>의무가입대상 배상책임보험</b></span>
+                                            <hr style="margin-top: 2px; margin-bottom: 5px; width: 300px;">
+                                            <p>가스사고 배상책임보험
+                                                <br>드론 배상책임보험
+                                                <br>승강기 배상책임보험
+                                                <br>어린이 놀이시설 배상책임보험
+                                                <br>재난 배상책임보험 
+                                                <br>적재물 배상책임보험
+                                                <br>체육시설업자 배상책임보험 
+                                                <br>옥외광고 배상책임보험 
+                                            </p>
+                                        </div>
+                                        <div class="service-item-content-left" style="margin-right: 20px;">
+                                            <span><b>전문배상 책임보험</b></span>
+                                            <hr style="margin-top: 2px; margin-bottom: 5px; width: 300px;">
+                                            <p>개인정보보호 배상책임보험 
+                                                <br>기업중대사고 배상책임보험 
+                                                <br>생산물 배상책임보험(음식물 外) 
+                                                <br>전문인(업무) 배상책임보험(간병인 外) 
+                                                <br>임원 배상책임보험 
+                                                <br>의사 및 병원배상책임보험
+                                                <br>복지시설 배상책임보험<br>(요양시설 주야간보호, 공동생활가정) 
+                                            </p>
+                                        </div>
+                                        <div class="service-item-content-left" style="margin-right: 20px;">
+                                            <span><b>기타 주요 배상책임보험(특별약관 형태 운영)</b></span>
+                                            <hr style="margin-top: 2px; margin-bottom: 5px; width: 300px;">
+                                            <p>시설소유,관리자 배상책임보험
+                                                <br>주차장 배상책임보험 
+                                                <br>차량정비업자 배상책임보험(I, II) 
+                                                <br>건설기계업자 배상책임보험(지게차, 로우더 外) 
+                                                <br>도급업자 배상책임보험 
+                                                <br>임차자 배상책임보험 
+                                                <br>여행업자 배상책임보험 
+                                                <br>창고업자 배상책임보험
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="service-item-content" style="display: flex; align-items: baseline; margin: 0 20px;">
+                                        <div class="service-item-content-left" style="margin-right: 20px; width: 300px;">
+                                            <span><b>근로자 재해 보장책임보험</b></span>
+                                            <hr style="margin-top: 2px; margin-bottom: 5px; width: 300px;">
+                                            <p>피보험자의 근로자에게 생긴 업무상 재해로 인하여 피보험자가 부담하는 손해에 대한 위험 보장(국내근재, 해외근재, 직업훈련생)
+                                            </p>
+                                        </div>
+                                        <div class="service-item-content-left" style="margin-right: 20px; width: 300px;">
+                                            <span><b>상해보험</b></span>
+                                            <hr style="margin-top: 2px; margin-bottom: 5px; width: 300px;">
+                                            <p> <b>가. 여행자 보험(국내여행, 해외여행, 해외업무출장 포함)</b>
+                                                <br>국내.외 여행 중 사고 보장<br><br>
+                                                <b>나. 직장인 단체상해보험</b>
+                                                <br>직장 복지후생 차원 근무 시간을 포함한 24시간 상해, 
+                                                질병(사망 및 후유장해), 2대질병, 암, 상해 및 질병 입원의료비 보장
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="kinds4" class="content">
+                                    <div class="service-item-img">
+                                        <picture class="responsive-picture1">
+                                            <source media="(min-width: 750px)" srcset="">
+                                            <source media="(max-width: 750px)" srcset="">
+                                            <img src="./assets/img/kinds4.jpg" alt="기술보험">
+                                        </picture>
+                                    </div>
+                                    <div class="service-item-title" style="margin: 20px auto;">
+                                        <h3>기술보험</h3>
+                                    </div>
+                                    <div class="service-item-content" style="display: flex; align-items: baseline;">
+                                        <div class="service-item-content-left" style="margin-right: 20px;">
+                                            <h5 style="color:blue; ">건설공사보험(Contractors All Risks Insurance: CAR)</h5>
+                                            <p>건설공사보험은 발주자, 시공자 및 기타 공사관계자가 각종 공사 중에 우연하고 급격한 사고로 인해 발생할 수 있는 위험 보상</p>
+                                            <hr style="margin-top: 2px; margin-bottom: 5px; width: 400px;">
+                                            <p>1. 재물손해 담보
+                                                <br>2. 제 3자 배상책임 담보
+                                                <br>3. 예정이익상실
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="service-item-content" style="display: flex; align-items: baseline;">
+                                        <div class="service-item-content-left" style="margin-right: 20px;">
+                                            <h5 style="color:blue; ">조립보험(Erection All Risks Insurance: EAR)</h5>
+                                            <p> 기계설비, 장치 및 각종 강구조물 등의 조립공사를 대상으로 하여, 조립건물인 재료, 자재등의 
+                                                보험목적이 조립공사 현장에 하역이 끝난 직후부터 조립공사를 완성한 후 시운전을 마칠 때까지의 
+                                                공사과정에서 우연한 사고로 인하여 공사목적물 자체에 발생한 물적 손해 보상 </p>
+                                            <hr style="margin-top: 2px; margin-bottom: 5px; width: 400px;">
+                                            <p>1. Plant 조립공사
+                                                <br>2. Unit 설치공사
+                                                <br>3. 개별 조립공사
+                                            </p>
+                                        </div>
+                                    </div>                                    
+                                    <div class="service-item-content" style="display: flex; align-items: baseline;">
+                                        <div class="service-item-content-left" style="margin-right: 20px;">
+                                            <h5 style="color:blue; ">완성토목공사물보험(Completed Construction All Risks Insurance: CCAR)</h5>
+                                            <p>도로, 터널, 교량, 방파제, 부두, 골프장 등 완공된 토목공사물의 관리, 운영 중 발생할 수 있는 위험 포괄 담보</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+            <br><br><br>
+
+        </section>
+
+        <!-- Network-->
+        <div id="portfolio">
+            <div class="container-fluid p-0">
+                <h2 class="text-center mt-0">협력사</h2>
+                <hr class="divider" />
+
+                <div class="container2 px-4 px-lg-5 row">
+
+                    <div class="box">
+                        <div class="default-text">손해보험사</div> <!--기본텍스트-->
+
+                        <div class="hover-text">
+                            <p><B>삼성화재
+                                <br>DB 손보
+                                <br>KB 손보
+                                <br>한화 손보
+                                <br>흥국화재
+                                <br>현대해상
+                                <br>메리츠화재</B>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="default-text">손해사정법인</div> <!--기본텍스트-->
+
+                        <div class="hover-text">
+                            <p><b>세종손해사정</b>
+                                <br>(기술보험팀)
+                                <br><b>에이원손해사정</b>
+                                <br>(화재배상사업부)
+                                <br><b>솔로몬손해사정</b>
+                                <br>(전문인 팀)
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="default-text">자산운용사</div> <!--기본텍스트-->
+
+                        <div class="hover-text">
+                            <p><b>자산운용 현</b><br>
+                                <br>부동산, 개발 PF
+                                <br>건설금융주선 SOC
+                                <br>기업대출 투자자문
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="default-text">생명보험사</div> <!--기본텍스트-->
+
+                        <div class="hover-text">
+                            <p><b>삼성생명
+                                <br>신한생명
+                                <br>미래에셋생명</b>
+                                <br>(퇴직연금)
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="default-text">법무법인</div> <!--기본텍스트-->
+
+                        <div class="hover-text">
+                            <p><b>법무법인 마중</b><br>
+                                <br>건설, 부동산, 금융 PF<br>산재노동
+                                <br>근로자재해
+                                <br>기업중대재해
+                                <br>배상책임
+                                <br>재물위험
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+        <!-- # Call to action-->
+         <br><br><br><br>
+        <section class="page-section bg-dark text-white">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mb-4">문의하기</h2>
+                <hr class="divider divider-light;" />
+                <p class="text-black-75 mb-5">인슈룹보험운용과 함께 합니다</p>
+                <a class="btn btn-light btn-xl" href="https://pf.kakao.com/_baTjn">카카오톡채널 바로가기</a>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="bg-dark bg-opacity-25 py-5" id="contact">
+            <div class="container px-4 px-lg-5 footer-container">
+                <span class="left-aligned">
+                    <p class="samll text-left text-muted" style="font-size: small">
+                        인슈룹보험운용 | 사업자등록번호 659-90-01914 | 대표이사 고영관 <br> 
+                        주소 06134 서울특별시 강남구 테헤란로 7길 11 한덕빌딩 8층 803호 | 대표번호 010-7389-4856 <br>
+                        F. 0508-130-9645 | E. inshuroop@gmail.com | kakaotalk channel. 인슈룹보험운용 <br>
+                        &copy; In-Shuroop IMO. All Rights Reserved.
+                    </p>
+                </span>
+                <span class="right-aligned">
+                    <img src="assets/logo2.png" alt="..." style="width: 100%; height: 100%; align-items: center;">
+                </span>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
